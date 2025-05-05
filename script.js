@@ -10,8 +10,9 @@ button.addEventListener("click", function () {
         alert("Por favor ingresa un numero valido")
         return
     } 
-        const farenheit = (valor * 9 / 5) + 32
-        const kelvin = valor + 273.15
+        const numero = parseFloat(valor);
+        const farenheit = (numero * 9 / 5) + 32
+        const kelvin = numero + 273.15 
 
         result.innerHTML = `
     <p>
